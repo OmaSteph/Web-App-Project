@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Sign Up!</h1>
+        <p>Already have an account? <span><a href="./index.html">Log In!</a></span></p>
+    </header>
+
+    <form action="" method="post" id="signupform">
+        <div>
+            <label for="firstname">FIRST NAME</label>
+            <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+        </div>
+        <div>
+            <label for="lastname">LAST NAME</label>
+            <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
+        </div>
+        <div>
+            <label for="email">EMAIL</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+        </div>
+        <div>
+            <label for="password">PASSWORD</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
+        </div>
+        <div>
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password" required>
+        </div>
+        <div>
+            <input type="checkbox" id="agree" value="termsOfService" required>
+            <label for="checkbox">I agree with the Terms of Service and Privacy Policy</label>
+        </div>
+        <div>
+            <button>Create Account</button>
+        </div>
+    </form>
+</body>
+</html>
