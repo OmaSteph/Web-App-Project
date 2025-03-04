@@ -7,37 +7,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidenav">
-        <div class="card">
-            <h1>Your Name</h1>
-            <p>abcdefghijk@gmail.com</p>
+    <div class="home-container">
+        <div class="sidenav">
+            <div class="card">
+                <h1>Your Name</h1>
+                <p>abcdefghijk@gmail.com</p>
+            </div>
+            <a href="./home.html">Home</a>
+            <a class="active" href="./user.html">My Account</a>
+            <a href="./settings.html">Settings</a>
+            <a href="./logout.html">Log Out</a>
+        </div> 
+        <div class="profilepage">
+            <form action="" method="post" id="userprofile">
+                <h1>Your Name</h1>
+                <div>
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+                </div>
+                <div>
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+                </div>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
+                </div>
+                <div>
+                    <button><a href="./editprofile.html">Edit Profile</a></button>
+                    <button><a href="">Delete Account</a></button>
+                </div>
+            </form>
         </div>
-        <a href="./home.html">Home</a>
-        <a href="./user.html">My Account</a>
-        <a href="./settings.html">Settings</a>
-        <a href="./logout.html">Log Out</a>
-    </div> 
-    <div class="main">
-        <button><a href="./editprofile.html">Edit Profile</a></button>
-        <form action="" method="post" id="signupform">
-            <div>
-                <label for="firstname">FIRST NAME</label>
-                <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
-            </div>
-            <div>
-                <label for="lastname">LAST NAME</label>
-                <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
-            </div>
-            <div>
-                <label for="email">EMAIL</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
-            </div>
-            <div>
-                <label for="password">PASSWORD</label>
-                <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
-            </div>
-            <button>Delete Account</button>
-        </form>
     </div>
 </body>
 </html>

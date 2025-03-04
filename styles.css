@@ -1,30 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url("./assets/abstract-textured-backgound.jpg");
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 2px solid; */
+}
+
+.logo {
+    width: 40px;
+}
+
+.header h1 {
+    color: lightblue;
+    font-size: 40px;
+}
+
+/* styling login page */
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid; */
+}
+
+.form {
+    /* border: 2px solid; */
+    padding: 70px;
+    background-color: lightblue;
+} 
+
+.form-paragraph {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.form-paragraph a:hover {
+    font-size: 1.4rem;
+}
+
+.login-input {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px 0;
+}
+
+.login-input:hover {
+    border: 3px solid darkblue;
+    font-size: 1rem;
+}
+
+
+.login-button {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: lightblue;
+    border: 3px solid darkblue;
+    color: blue;
+    font-size: 1rem;
+}
+
+.forgot-password {
+    text-align: right;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.forgot-password:hover {
+    color: blue;
+    font-size: 1.3rem;
+}
+
+/* styling signup page */
+.signup-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-p {
+    text-align: right;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.header-p a:hover {
+    font-size: 1.7rem;
+}
+
+#signupform {
+    padding: 70px;
+    margin: 20px 100px;
+    background-color: lightblue;
+}
+
+.inputfield {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.form-control::placeholder {
+    color: grey;
+    opacity: 0.3;
+}
+
+.form-control:hover {
+    border: 3px solid darkblue;
+    /* font-size: 1rem; */
+}
+
+.policy {
+    font-size: 1.4rem;
+    margin: 18px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.policy a {
+    text-decoration: none;
+    color: blue;
+    font-size: 1.5rem;
+}
+
+#agree {
+    height: 20px;
+    width: 20px;
+}
+
+.signup-button {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 10px;
+    margin: 10px 0;
+    background-color: darkblue;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: lightblue;
+    border: 3px solid darkblue;
+    color: rgb(45, 45, 78);
+    font-size: 1rem;
+}
+
+/* styling the homepage */
+.home-container {
+    height: 100%;
+}
+
 .sidenav {
     height: 100%;
-    width: 160px;
+    width: 200px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: lightblue;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 30px;
 }
   
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 1.5rem;
+    color: darkblue;
     display: block;
 }
   
 .sidenav a:hover {
-    color: #f1f1f1;
+    background-color: blue;
+    color: white;
 }
-.main {
-    margin-left: 160px;
+
+.sidenav .active {
+    color: lightblue;
+    background-color: darkblue;
+    font-size: 1.7rem;
 }
 
 .card {
-    color: #818181;
+    color: darkblue;
+    padding-left: 10px;
+}
+
+.main {
+    display: flex;
+    margin-left: 200px;
+    padding-top: 15px;
+    padding-left: 15px;
+    color: lightblue;
+    font-size: 1.2rem;
+}
+
+.home-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 15px;
+    padding-top: 2px;
+}
+
+/* .slogan {
+    color: lightblue;
+    font-size: 1.2rem;
+} */
+
+/* styling the user page */
+.profilepage {
+    margin-left: 200px;
+    padding-top: 15px;
 }
