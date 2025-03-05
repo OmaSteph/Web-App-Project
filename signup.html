@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
 </head>
 <body>
     <div class="signup-container">
@@ -13,10 +12,10 @@
             <div class="logo">
                 <img src="./assets/blue-shopping-cart-10910.png" alt="Icon" style="width: 100%;">
             </div>
-            <h1 id="shop">SHOP</h1>
+            <h1>SHOP</h1>
         </div>
     
-        <div id="signupform">
+        <div class="signupform">
             <form action="" id="signupForm">
                 <p class="header-p">Already have an account? <span><a href="./index.html" class="header-p" style="color: blue;">Log In!</a></span></p>
                 <div class="inputfield">
@@ -41,13 +40,14 @@
                 </div>
                 <div class="policy">
                     <input type="checkbox" id="agree" value="termsOfService" required>
-                    <label class="policy">I agree with the <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>.</label>
+                    <label for="agree" class="policy">I agree with the <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>.</label>
                 </div>
                 <button class="signup-button" type="submit">
-                    CREATE ACCOUNT
+                   <a href="index.html">CREATE ACCOUNT</a> 
                 </button> 
             </form>
         </div>
     </div>
+    <script src="signup.js"></script>
 </body>
 </html>
