@@ -10,13 +10,13 @@
     <div class="home-container">
         <div class="sidenav">
             <div class="card">
-                <h1>Your Name</h1>
-                <p>abcdefghijk@gmail.com</p>
+                <h1 id="name1"></h1>
+                <p id="username"></p>
             </div>
-            <a class="active" href="/home.html">Home</a>
+            <a href="/home.html">Home</a>
             <a href="./user.html">My Account</a>
             <a href="./settings.html">Settings</a>
-            <a href="./logout.html">Log Out</a>
+            <a class="active" href="./logout.html">Log Out</a>
         </div> 
         <div class="main">
             <div class="home-header">
@@ -24,12 +24,13 @@
                     <img src="./assets/blue-shopping-cart-10910.png" alt="Icon" style="width: 100%;">
                 </div>
                 <h1>SHOP</h1> 
+        
             </div> 
-            <div class="logoutcard">
-                <p>Are you sure you want to logout</p>
-                <button id="logout">Yes</button>
-                <button id="no">NO</button> 
-            </div>
+        </div>
+        <div class="logoutcard">
+            <h1>Are you sure you want to logout</h1>
+            <button id="logout">Yes</button>
+            <button id="no">NO</button> 
         </div> 
     </div>
     <script src="logout.js"></script>

@@ -1,6 +1,5 @@
 document.getElementById('logout').addEventListener('click',function() {
-localStorage.getItem(user);
-    localStorage.removeItem ('user');
+    localStorage.removeItem ('loggedInUser');
     // alert('Logged out successfully');
 
     setTimeout (() => {
