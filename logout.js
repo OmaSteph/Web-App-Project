@@ -1,14 +1,11 @@
 document.getElementById('logout').addEventListener('click',function() {
-    localStorage.removeItem ('loggedInUser');
+localStorage.getItem(user);
+    localStorage.removeItem ('user');
     // alert('Logged out successfully');
 
     setTimeout (() => {
-        window.location.href = 'index.html';
+        window.location.href = 'login.html';
     }, 50);
 });
 
-document.getElementById('no').addEventListener('click',function() {
-    setTimeout (() => {
-        window.location.href = 'home.html';
-    }, 50);
-});
+z

@@ -7,7 +7,7 @@ document.getElementById('signupForm').addEventListener('submit', function(regist
     const username = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirmPassword').value;
-    console.log(name1, username, password);
+    console.log(name1, name2, username, password);
     if (password.length < 8) {
         alert('Password must be atleast 8 character long');
         return;
@@ -23,6 +23,7 @@ document.getElementById('signupForm').addEventListener('submit', function(regist
     users.push ({name1, name2, username, password});
     localStorage.setItem('users', JSON.stringify(users));
 
+    console.log(username, password);
     setTimeout (() => {
         window.location.href = 'login.html';
     }, 1000);

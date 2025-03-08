@@ -3,11 +3,11 @@ document.getElementById('loginform').addEventListener('submit', function(login) 
 
     const username = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-    const name1 = document.getElementById('firstname').value;
-    console.log(name1, username, password);
+    // const name1 = document.getElementById('firstname').value;
+    console.log(username, password);
     const users = JSON.parse (localStorage.getItem('users')) || []; 
 
-    const user = users.find (u => u.username === username && u.password === password && u.name1 === name1);
+    const user = users.find (u => u.username === username && u.password === password);
 
     if (user) {
         localStorage.setItem ('loggedInUser', JSON.stringify (user));
